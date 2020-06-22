@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather-app.css">
+</head>
+
+<body>
+    <div id='container'>
+        <h1>Weather app</h1>
+        <input type="text" id="inputtext"><br>
+        <button id="mybutton1">Submit</button><br>
+        <button id="mybutton2">Get my location</button>
+        <label for="loading" id="hiddentext" hidden=true>Loading....</label>
+        <div id="grid-container">
+            <div class="grid-item1">
+                <h4>City</h4>
+                <label for="cityname"></label>
+            </div>
+            <div class="grid-item2">
+                <h4>Temperature</h4>
+                <label for="temp"></label>
+            </div>
+            <div class="grid-item3">
+                <h4>Icon for weather type</h4>
+                <img alt="Image not found">
+            </div>
+            <div class="grid-item4">
+                <h4>Wind speed</h4>
+                <label for="windspeed"></label>
+            </div>
+            <div class="grid-item5">
+                <h4>Clowdy</h4>
+                <label for="cloud"></label>
+            </div>
+            <div class="grid-item6">
+                <h4>Sunrise</h4>
+                <label for="sunrise"></label>
+            </div>
+            <div class="grid-item7">
+                <h4>Sunset</h4>
+                <label for="Sunset"></label>
+            </div>
+        </div>
+        <div id="map">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="weather-app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8VOdRhZ3M55cbIGIQZN0m4nvZFzWzFtg"></script>
+</body>
+
+</html>
